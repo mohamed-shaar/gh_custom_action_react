@@ -105,7 +105,6 @@ jobs:
           echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
   deploy-repo-action:
     needs: build
-    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Get code
